@@ -41,7 +41,7 @@ export function objectClone(obj, count) {
 
   for (let i = 0; i < count; i += 1) {
     const clone = structuredClone(obj);
-    clone.id = i + 1;
+    clone.id = i;
     result.push(clone);
   }
 
